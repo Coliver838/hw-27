@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f8f8f8;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.features {
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.portfolio {
+  padding: 60px 0;
+}
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #222;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 40px;
+  gap: 20px;
+  padding: 0;
+}
+.filter li {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  color: #2196f3;
+  transition: 0.3s;
+}
+.filter .active,
+.filter li:hover {
+  background: #2196f3;
+  color: #fff;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+.card.card:hover {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card-info {
+  padding: 20px;
+}
+.card-info h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.card-info p {
+  margin: 0;
+  color: #757575;
+  font-size: 14px;
+}
+
+footer {
+  background: #222;
+  color: #bbb;
+  padding: 40px 0;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-logo {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-info,
+.footer-social,
+.footer-newsletter {
+  flex: 1 1 200px;
+}
+.footer-info p,
+.footer-newsletter p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.footer-social a {
+  margin-right: 10px;
+  color: #bbb;
+  text-decoration: none;
+  font-size: 20px;
+}
+.newsletter-form input[type="email"] {
+  padding: 8px;
+  width: calc(100% - 110px);
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+.newsletter-form button {
+  padding: 8px 16px;
+  border: none;
+  background: #2196f3;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .features .container,
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.h33 {
+  display: flex;
+  text-align: left;
+}
+.p1 {
+  color: #2196f3;
+}
